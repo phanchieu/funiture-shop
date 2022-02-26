@@ -1,6 +1,7 @@
 export default {
   products: [
-    { id:11,
+    {
+      id: 11,
       img: "assets/images/room/living_room/1.jpg",
       view_img_product: [
         "assets/images/room/living_room/img_view_prd/1-1.jpg",
@@ -15,7 +16,8 @@ export default {
       category: "Phòng khách",
       materials: ["Gỗ"],
     },
-    { id:21,
+    {
+      id: 21,
       img: "assets/images/room/living_room/2.jpg",
       view_img_product: [
         "assets/images/room/living_room/img_view_prd/2-1.jpg",
@@ -31,7 +33,8 @@ export default {
       materials: ["Gỗ - Bọc Da"],
     },
 
-    { id:31,
+    {
+      id: 31,
       img: "assets/images/room/living_room/3.jpg",
       view_img_product: [
         "assets/images/room/living_room/img_view_prd/3-1.jpg",
@@ -46,7 +49,8 @@ export default {
       category: "Phòng khách",
       materials: ["Gỗ"],
     },
-    { id:41,
+    {
+      id: 41,
       img: "assets/images/room/living_room/4.jpg",
       view_img_product: [
         "assets/images/room/living_room/img_view_prd/4-1.jpg",
@@ -61,7 +65,8 @@ export default {
       category: "Phòng khách",
       materials: ["Gỗ"],
     },
-    { id:51,
+    {
+      id: 51,
       img: "assets/images/room/living_room/5.jpg",
       view_img_product: [
         "assets/images/room/living_room/img_view_prd/5-1.jpg",
@@ -75,7 +80,8 @@ export default {
       category: "Phòng khách",
       materials: ["Gỗ - Bọc Vải"],
     },
-    { id:61,
+    {
+      id: 61,
       img: "assets/images/room/living_room/7.jpg",
       view_img_product: [
         "assets/images/room/living_room/img_view_prd/7-1.jpg",
@@ -89,7 +95,8 @@ export default {
       category: "Phòng khách",
       materials: ["Gỗ - Bọc Da"],
     },
-    { id:71,
+    {
+      id: 71,
       img: "assets/images/room/living_room/9.jpg",
       view_img_product: ["assets/images/room/living_room/img_view_prd/9-1.jpg"],
       name: "Bàn cafe Cabaret",
@@ -100,7 +107,8 @@ export default {
       category: "Phòng khách",
       materials: ["Gỗ"],
     },
-    { id:81,
+    {
+      id: 81,
       img: "assets/images/room/living_room/10.jpg",
       view_img_product: [
         "assets/images/room/living_room/img_view_prd/10-1.jpg",
@@ -115,7 +123,8 @@ export default {
       category: "Phòng khách",
       materials: ["Gỗ - Bọc Vải"],
     },
-    { id:91,
+    {
+      id: 91,
       img: "assets/images/room/living_room/11.jpg",
       view_img_product: [
         "assets/images/room/living_room/img_view_prd/11-1.jpg",
@@ -130,7 +139,8 @@ export default {
       category: "Phòng khách",
       materials: ["Gỗ - Bọc Vải"],
     },
-    { id:101,
+    {
+      id: 101,
       img: "assets/images/room/living_room/12.jpg",
       view_img_product: [
         "assets/images/room/living_room/img_view_prd/12-1.jpg",
@@ -145,7 +155,8 @@ export default {
       category: "Phòng khách",
       materials: ["Gỗ - Bọc Vải"],
     },
-    { id:111,
+    {
+      id: 111,
       img: "assets/images/room/living_room/13.jpg",
       view_img_product: [
         "assets/images/room/living_room/img_view_prd/13-1.jpg",
@@ -160,7 +171,8 @@ export default {
       category: "Phòng khách",
       materials: ["Gỗ - Bọc Vải"],
     },
-    { id:121,
+    {
+      id: 121,
       img: "assets/images/room/living_room/14.jpg",
       view_img_product: [
         "assets/images/room/living_room/img_view_prd/14-1.jpg",

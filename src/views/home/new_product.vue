@@ -19,9 +19,7 @@
             >
               <router-link :to="link_view_product" class="img">
                 <img
-                  :src="
-                    require(`@/${product.img}`)
-                  "
+                  :src="require(`@/${product.img}`)"
                   alt=""
                   class="img_product"
                 />
@@ -35,13 +33,17 @@
                   <i class="fas fa-star"></i>
                 </div>
                 <h6 class="product_name">
-                  <router-link :to="link_view_product">{{ product.name }}</router-link>
+                  <router-link :to="link_view_product">{{
+                    product.name
+                  }}</router-link>
                 </h6>
                 <div class="price">
                   {{ formatPrice(product.price) }}<span>đ</span>
                 </div>
                 <div class="buttons-coll">
-                  <router-link :to="link_view_product" class="custom-btn view_now"
+                  <router-link
+                    :to="link_view_product"
+                    class="custom-btn view_now"
                     ><span>Xem ngay</span></router-link
                   >
                 </div>
@@ -49,136 +51,133 @@
             </div>
           </b-row>
         </div>
-        
       </div>
     </div>
     <div class="banner_for_new_product">
-          <div class="container">
-            <div class="banner">
-              <img
-                class=""
-                :src="require(`@/assets/images/image_home/banner/${img_banner}`)"
-                alt=""
-              />
-              <div class="custom-b custom_banner">
-                <div></div>
-              </div>
-            </div>
+      <div class="container">
+        <div class="banner">
+          <img
+            class=""
+            :src="require(`@/assets/images/image_home/banner/${img_banner}`)"
+            alt=""
+          />
+          <div class="custom-b custom_banner">
+            <div></div>
           </div>
         </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-import {mapMutations} from 'vuex'
+import { mapMutations } from "vuex";
 export default {
   data() {
     return {
-      link_view_product:'/View-product',
-      img_banner:'banner_index_intro_top.jpg',
+      link_view_product: "/View-product",
+      img_banner: "banner_index_intro_top.jpg",
       products: [
         {
           img: "assets/images/room/living_room/4.jpg",
-          view_img_product:[
-            'assets/images/room/living_room/img_view_prd/4-1.jpg',
-            'assets/images/room/living_room/img_view_prd/4-2.jpg',
-            'assets/images/room/living_room/img_view_prd/4-3.jpg'
-            ],
+          view_img_product: [
+            "assets/images/room/living_room/img_view_prd/4-1.jpg",
+            "assets/images/room/living_room/img_view_prd/4-2.jpg",
+            "assets/images/room/living_room/img_view_prd/4-3.jpg",
+          ],
           name: "Kệ TV Batista",
           price: 5990000,
-          quantity:1,
-          colors:['Trắng'],
-          sizes:['Lớn','Nhỏ'],
-          category:'Phòng khách',
-          materials:['Gỗ'],
+          quantity: 1,
+          colors: ["Trắng"],
+          sizes: ["Lớn", "Nhỏ"],
+          category: "Phòng khách",
+          materials: ["Gỗ"],
         },
         {
           img: "assets/images/room/work_room/1.jpg",
-          view_img_product:[
-             'assets/images/room/work_room/img_view_prd/1-1.jpg',
-             'assets/images/room/work_room/img_view_prd/1-2.jpg',
-             ],
+          view_img_product: [
+            "assets/images/room/work_room/img_view_prd/1-1.jpg",
+            "assets/images/room/work_room/img_view_prd/1-2.jpg",
+          ],
           name: "Sofa giường",
           price: 2990000,
-          quantity:1,
-          colors:['Xám'],
-          sizes:['Lớn','Vừa'],
-          category:'Phòng làm việc',
-          materials:['Gỗ - Bọc Vải']
+          quantity: 1,
+          colors: ["Xám"],
+          sizes: ["Lớn", "Vừa"],
+          category: "Phòng làm việc",
+          materials: ["Gỗ - Bọc Vải"],
         },
         {
           img: "assets/images/room/bedroom/1.jpg",
-          view_img_product:[
-             'assets/images/room/bedroom/img_view_prd/1-1.jpg',
-             'assets/images/room/bedroom/img_view_prd/1-2.jpg',
-             'assets/images/room/bedroom/img_view_prd/1-3.jpg'
-             ],
+          view_img_product: [
+            "assets/images/room/bedroom/img_view_prd/1-1.jpg",
+            "assets/images/room/bedroom/img_view_prd/1-2.jpg",
+            "assets/images/room/bedroom/img_view_prd/1-3.jpg",
+          ],
           name: "Ghế bành Viking Freja",
           price: 1100000,
-          quantity:1,
-          colors:['Xanh','Đỏ'],
-          sizes:['Lớn','Nhỏ'],
-          category:'Phòng ngủ',
-          materials:['Gỗ - Bọc Vải'],
+          quantity: 1,
+          colors: ["Xanh", "Đỏ"],
+          sizes: ["Lớn", "Nhỏ"],
+          category: "Phòng ngủ",
+          materials: ["Gỗ - Bọc Vải"],
         },
         {
           img: "assets/images/room/kitchen/3.jpg",
-          view_img_product:[
-             'assets/images/room/kitchen/img_view_prd/3-1.jpg',
-             'assets/images/room/kitchen/img_view_prd/3-2.jpg',
-             ],
+          view_img_product: [
+            "assets/images/room/kitchen/img_view_prd/3-1.jpg",
+            "assets/images/room/kitchen/img_view_prd/3-2.jpg",
+          ],
           name: "Đôn mềm Connemara",
           price: 4490000,
-          quantity:1,
-          colors:['Trắng'],
-          sizes:['Vừa','Nhỏ'],
-          category:'Phòng bếp',
-          materials:['Gỗ - Bọc Vải']
+          quantity: 1,
+          colors: ["Trắng"],
+          sizes: ["Vừa", "Nhỏ"],
+          category: "Phòng bếp",
+          materials: ["Gỗ - Bọc Vải"],
         },
         {
           img: "assets/images/room/bedroom/2.jpg",
-          view_img_product:[
-             'assets/images/room/bedroom/img_view_prd/2-1.jpg',
-             'assets/images/room/bedroom/img_view_prd/2-2.jpg',
-             ],
+          view_img_product: [
+            "assets/images/room/bedroom/img_view_prd/2-1.jpg",
+            "assets/images/room/bedroom/img_view_prd/2-2.jpg",
+          ],
           name: "Ghế bành NanJing",
           price: 1492500,
-          quantity:1,
-          colors:['Nâu đen'],
-          sizes:['Lớn','Vừa'],
-          category:'Phòng ngủ',
-          materials:['Gỗ - Bọc Da'],
+          quantity: 1,
+          colors: ["Nâu đen"],
+          sizes: ["Lớn", "Vừa"],
+          category: "Phòng ngủ",
+          materials: ["Gỗ - Bọc Da"],
         },
         {
           img: "assets/images/room/bedroom/3.jpg",
-          view_img_product:[
-             'assets/images/room/bedroom/img_view_prd/3-1.jpg',
-             'assets/images/room/bedroom/img_view_prd/3-2.jpg',
-             'assets/images/room/bedroom/img_view_prd/3-3.jpg'
-             ],
+          view_img_product: [
+            "assets/images/room/bedroom/img_view_prd/3-1.jpg",
+            "assets/images/room/bedroom/img_view_prd/3-2.jpg",
+            "assets/images/room/bedroom/img_view_prd/3-3.jpg",
+          ],
           name: "Sofa giường Temasek",
           price: 1990000,
-          quantity:1,
-          colors:['Đỏ'],
-          sizes:['Vừa','Nhỏ'],
-          category:'Phòng ngủ',
-          materials:['Gỗ - Bọc Vải'],
+          quantity: 1,
+          colors: ["Đỏ"],
+          sizes: ["Vừa", "Nhỏ"],
+          category: "Phòng ngủ",
+          materials: ["Gỗ - Bọc Vải"],
         },
       ],
     };
   },
   methods: {
-     ...mapMutations([
-      'viewProduct'
-    ]),
+    ...mapMutations(["viewProduct"]),
     formatPrice(value) {
       let val = (value / 1).toFixed().replace(".");
       return val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
     },
-    view(product){
-      let Data = [product]
+    view(product) {
+      let Data = [product];
       this.viewProduct(Data);
-    }
+    },
   },
 };
 </script>
@@ -203,7 +202,7 @@ li {
   right: 0;
   border-bottom: 3px solid #ebebeb;
 }
-.title h5{
+.title h5 {
   margin: 0;
 }
 h5::before {

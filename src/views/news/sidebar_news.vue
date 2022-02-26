@@ -19,7 +19,12 @@
         </h5>
       </div>
       <div class="Related_posts" v-for="(nn, index) in news" :key="index">
-        <div class="related" v-for="(n, index) in nn" :key="index"  @mousedown="view_news(n)">
+        <div
+          class="related"
+          v-for="(n, index) in nn"
+          :key="index"
+          @mousedown="view_news(n)"
+        >
           <div class="img">
             <router-link :to="link_view"
               ><img :src="require(`@/${n.cover_image}`)" alt=""
@@ -27,9 +32,7 @@
           </div>
           <div class="title_Related">
             <div class="tt_related">
-              <router-link :to="link_view"
-              >{{ n.title_introduce }}</router-link
-            >
+              <router-link :to="link_view">{{ n.title_introduce }}</router-link>
             </div>
             <div class="date_time">
               <span>{{ n.date_time }}</span>
@@ -43,32 +46,28 @@
 </template>
 
 <script>
-import {mapGetters,mapMutations} from 'vuex'
+import { mapGetters, mapMutations } from "vuex";
 export default {
   data() {
     return {
-      link_view:'/View-news',
+      link_view: "/View-news",
       news: [],
     };
   },
-  methods:{
-    ...mapGetters([
-      'dataNews',
-    ]),
-    ...mapMutations([
-      'to_viewNews'
-    ]),
-    getNews(){
-      this.news = this.dataNews()
+  methods: {
+    ...mapGetters(["dataNews"]),
+    ...mapMutations(["to_viewNews"]),
+    getNews() {
+      this.news = this.dataNews();
     },
-    view_news(n){
-      this.to_viewNews([n])
-    }
+    view_news(n) {
+      this.to_viewNews([n]);
+    },
   },
-    created(){
-      this.getNews()
-      // console.log(this.to_viewNews())
-    }
+  created() {
+    this.getNews();
+    // console.log(this.to_viewNews())
+  },
 };
 </script>
 
@@ -146,7 +145,7 @@ h5::before {
 .title_Related {
   margin: 0 10px;
 }
-.tt_related{
+.tt_related {
   height: 45px;
   overflow: hidden;
 }
@@ -159,7 +158,7 @@ h5::before {
 .title_Related a:hover {
   color: #ff9f00;
 }
-.date_time{
+.date_time {
   font-size: 14px;
   margin: 10px 0px;
   color: #a5a5a5;

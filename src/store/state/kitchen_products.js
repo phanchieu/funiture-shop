@@ -1,6 +1,7 @@
 export default {
   products: [
-    { id:15,
+    {
+      id: 15,
       img: "assets/images/room/kitchen/1.jpg",
       view_img_product: [
         "assets/images/room/kitchen/img_view_prd/1-1.jpg",
@@ -14,7 +15,8 @@ export default {
       category: "Phòng bếp",
       materials: ["Khác"],
     },
-    { id:25,
+    {
+      id: 25,
       img: "assets/images/room/kitchen/2.jpg",
       view_img_product: [
         "assets/images/room/kitchen/img_view_prd/2-1.jpg",
@@ -28,7 +30,8 @@ export default {
       category: "Phòng bếp",
       materials: ["Khác"],
     },
-    { id:35,
+    {
+      id: 35,
       img: "assets/images/room/kitchen/3.jpg",
       view_img_product: [
         "assets/images/room/kitchen/img_view_prd/3-1.jpg",
@@ -42,7 +45,8 @@ export default {
       category: "Phòng bếp",
       materials: ["Gỗ - Bọc Vải"],
     },
-    { id:45,
+    {
+      id: 45,
       img: "assets/images/room/kitchen/4.jpg",
       view_img_product: [
         "assets/images/room/kitchen/img_view_prd/4-1.jpg",
@@ -56,7 +60,8 @@ export default {
       category: "Phòng bếp",
       materials: ["Khác"],
     },
-    { id:55,
+    {
+      id: 55,
       img: "assets/images/room/kitchen/5.jpg",
       view_img_product: ["assets/images/room/kitchen/img_view_prd/5-1.jpg"],
       name: "Gía để khăn ăn White Orchid",
@@ -67,7 +72,8 @@ export default {
       category: "Phòng bếp",
       materials: ["Khác"],
     },
-    { id:65,
+    {
+      id: 65,
       img: "assets/images/room/kitchen/6.jpg",
       view_img_product: [
         "assets/images/room/kitchen/img_view_prd/6-1.jpg",
@@ -82,7 +88,8 @@ export default {
       category: "Phòng bếp",
       materials: ["Khác"],
     },
-    { id:75,
+    {
+      id: 75,
       img: "assets/images/room/kitchen/7.jpg",
       view_img_product: [
         "assets/images/room/kitchen/img_view_prd/7-1.jpg",
@@ -96,7 +103,8 @@ export default {
       category: "Phòng bếp",
       materials: ["Khác"],
     },
-    { id:85,
+    {
+      id: 85,
       img: "assets/images/room/kitchen/8.jpg",
       view_img_product: [
         "assets/images/room/kitchen/img_view_prd/8-1.jpg",
@@ -111,7 +119,8 @@ export default {
       category: "Phòng bếp",
       materials: ["Khác"],
     },
-    { id:95,
+    {
+      id: 95,
       img: "assets/images/room/kitchen/9.jpg",
       view_img_product: [
         "assets/images/room/kitchen/img_view_prd/9-1.jpg",
@@ -125,7 +134,8 @@ export default {
       category: "Phòng bếp",
       materials: ["Khác"],
     },
-    { id:105,
+    {
+      id: 105,
       img: "assets/images/room/kitchen/10.jpg",
       view_img_product: [
         "assets/images/room/kitchen/img_view_prd/10-1.jpg",
@@ -140,7 +150,8 @@ export default {
       category: "Phòng bếp",
       materials: ["Khác"],
     },
-    { id:115,
+    {
+      id: 115,
       img: "assets/images/room/kitchen/11.jpg",
       view_img_product: [
         "assets/images/room/kitchen/img_view_prd/11-1.jpg",
@@ -155,7 +166,8 @@ export default {
       category: "Phòng bếp",
       materials: ["Khác"],
     },
-    { id:125,
+    {
+      id: 125,
       img: "assets/images/room/kitchen/12.jpg",
       view_img_product: [
         "assets/images/room/kitchen/img_view_prd/12-1.jpg",

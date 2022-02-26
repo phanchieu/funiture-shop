@@ -243,7 +243,11 @@ export default {
   },
   methods: {
     ...mapGetters(["cart", "info_prd_order"]),
-    ...mapMutations(["order_success", "push_info_prd_order",{all_products:"all_product"}]),
+    ...mapMutations([
+      "order_success",
+      "push_info_prd_order",
+      { all_products: "all_product" },
+    ]),
     getCart() {
       this.products = this.cart();
       // console.log(this.cart())
@@ -419,9 +423,9 @@ export default {
         };
         // this.info_prd_order().push(push_data)
         // data_prd.push(push_data)
-        this.push_info_prd_order(push_data)
+        this.push_info_prd_order(push_data);
         this.to_success = "/pay-success";
-        console.log(push_data)
+        console.log(push_data);
       } else {
         // this.order_success()
         this.to_success = "/Cart/Pay";

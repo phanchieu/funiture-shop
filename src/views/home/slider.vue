@@ -31,7 +31,7 @@ export default {
 </script>
 
 <style scoped>
-.img{
+.img {
   display: block;
   width: 100%;
   height: 80vh;
@@ -42,7 +42,7 @@ export default {
   height: 100%;
   object-fit: cover !important;
 }
-.carousel{
+.carousel {
   z-index: 123;
 }
 </style>

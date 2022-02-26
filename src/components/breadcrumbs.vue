@@ -1,21 +1,21 @@
 <template>
   <div>
-    <div id="Breadcrumbs"  
-    v-for="(item,index) in items" 
-    :key="index" 
-    :class="{hidden_brc:item.name == 'Home'}">
+    <div
+      id="Breadcrumbs"
+      v-for="(item, index) in items"
+      :key="index"
+      :class="{ hidden_brc: item.name == 'Home' }"
+    >
       <div class="container">
         <div class="Breadcrumbs">
-          <router-link to="/">Trang chủ</router-link> 
+          <router-link to="/">Trang chủ</router-link>
           <div class="item">
-          <span class="icon">
-            <i class="fas fa-angle-right"></i>
-            <i class="fas fa-angle-right"></i>
+            <span class="icon">
+              <i class="fas fa-angle-right"></i>
+              <i class="fas fa-angle-right"></i>
             </span>
-            <router-link 
-            :to="item.path"
-            >
-            {{ item.name }}
+            <router-link :to="item.path">
+              {{ item.name }}
             </router-link>
           </div>
         </div>
@@ -26,54 +26,51 @@
 
 <script>
 export default {
-  data(){
-    return{
-      
-    }
+  data() {
+    return {};
   },
-  props:["items"],
-  methods:{
-    test(){
-        // console.log(this.items)
-    
-    }
+  props: ["items"],
+  methods: {
+    test() {
+      // console.log(this.items)
+    },
   },
-  created(){
+  created() {
     // this.test();
-  }
-}
+  },
+};
 </script>
 
 <style scoped>
-.container{
+.container {
   max-width: 1140px;
 }
-a{
+a {
   text-decoration: none;
   color: black;
 }
-#Breadcrumbs{
+#Breadcrumbs {
   border-top: 1px solid #ebebeb;
   border-bottom: 1px solid #ebebeb;
 }
-.Breadcrumbs{
+.Breadcrumbs {
   padding: 20px 0px;
   display: flex;
 }
-.Breadcrumbs a:hover{
+.Breadcrumbs a:hover {
   color: #459a07;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
-.item .icon{
+.item .icon {
   padding: 0 5px;
   font-size: 14px;
 }
-.item:last-child a{
+.item:last-child a {
   font-weight: 600;
   color: black;
   cursor: auto;
 }
-.hidden_brc{
+.hidden_brc {
   display: none;
 }
 </style>

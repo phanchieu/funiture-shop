@@ -106,7 +106,6 @@ export default {
 </script>
 
 <style scoped>
-
 .none_info .no_name {
   background: #459a07;
   padding: 10px 0px;

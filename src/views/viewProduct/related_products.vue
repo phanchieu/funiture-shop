@@ -19,9 +19,7 @@
             >
               <router-link :to="link_view_product" class="img">
                 <img
-                  :src="
-                    require(`@/${product.img}`)
-                  "
+                  :src="require(`@/${product.img}`)"
                   alt=""
                   class="img_product"
                 />
@@ -35,13 +33,17 @@
                   <i class="fas fa-star"></i>
                 </div>
                 <h6 class="product_name">
-                  <router-link :to="link_view_product">{{ product.name }}</router-link>
+                  <router-link :to="link_view_product">{{
+                    product.name
+                  }}</router-link>
                 </h6>
                 <div class="price">
                   {{ formatPrice(product.price) }}<span>đ</span>
                 </div>
                 <div class="buttons-coll">
-                  <router-link :to="link_view_product" class="custom-btn view_now"
+                  <router-link
+                    :to="link_view_product"
+                    class="custom-btn view_now"
                     ><span>Xem ngay</span></router-link
                   >
                 </div>
@@ -53,70 +55,62 @@
       </div>
     </div>
     <!-- {{getProducts}} -->
-    {{getPrd()}}
+    {{ getPrd() }}
   </div>
 </template>
 
 <script>
-import {mapMutations,mapGetters} from 'vuex'
+import { mapMutations, mapGetters } from "vuex";
 export default {
   data() {
     return {
-      link_view_product:'/View-product',
-      products:[],
-      get_related_prd:[],
-      category_fil:'',
+      link_view_product: "/View-product",
+      products: [],
+      get_related_prd: [],
+      category_fil: "",
     };
   },
   computed: {
-    getProducts: function () {
-      var prd = this.get_related_prd.filter((item)=>{
-        return item != this.category_fil[0]
-      })
-      return prd.slice(0,6).reverse()
-    }
+    getProducts: function() {
+      var prd = this.get_related_prd.filter((item) => {
+        return item != this.category_fil[0];
+      });
+      return prd.slice(0, 6).reverse();
+    },
   },
   methods: {
-     ...mapMutations([
-      'viewProduct',
-      'viewed_products_mutation'
-    ]),
-    ...mapGetters([
-      'all_prd',
-      'related_products_getter',
-      'viewProduct_getter'
-    ]),
-    getPrd(){
-     this.get_related_prd = this.related_products_getter()
-     this.category_fil = this.viewProduct_getter()
+    ...mapMutations(["viewProduct", "viewed_products_mutation"]),
+    ...mapGetters(["all_prd", "related_products_getter", "viewProduct_getter"]),
+    getPrd() {
+      this.get_related_prd = this.related_products_getter();
+      this.category_fil = this.viewProduct_getter();
     },
     formatPrice(value) {
       let val = (value / 1).toFixed().replace(".");
       return val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
     },
-    view(product){
-      let Data = [product]
+    view(product) {
+      let Data = [product];
       this.viewProduct(Data);
-      this.scrollToTop()
+      this.scrollToTop();
     },
     scrollToTop() {
-      window.scrollTo(0,0);
+      window.scrollTo(0, 0);
     },
-    test(){ 
-        // var ctgr_product = this.category_fil 
-        // var all_products = this.get_related_prd
-        // var fil = all_products.filter((item)=>{
-        //   return item.category == ctgr_product[0].category
-        // })
-        // // return fill
-        // console.log(fil) 
-       
-    }
+    test() {
+      // var ctgr_product = this.category_fil
+      // var all_products = this.get_related_prd
+      // var fil = all_products.filter((item)=>{
+      //   return item.category == ctgr_product[0].category
+      // })
+      // // return fill
+      // console.log(fil)
+    },
   },
-  created(){
+  created() {
     // this.test()
     // this.getPrd()
-  }
+  },
 };
 </script>
 
@@ -140,7 +134,7 @@ li {
   right: 0;
   border-bottom: 3px solid #ebebeb;
 }
-.title h5{
+.title h5 {
   margin: 0;
 }
 h5::before {

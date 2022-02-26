@@ -5,11 +5,17 @@
         <div class="slide">
           <div class="container">
             <div class="category">
-              <carousel 
-              :autoplay="false" 
-              :nav="false" 
-              :dots="false"
-              :responsive="{0:{items:1,margin:10,autoplay:true },350:{items:2,margin:15,autoplay:true},600:{items:3,margin:30},900:{items:4,margin:30}}">
+              <carousel
+                :autoplay="false"
+                :nav="false"
+                :dots="false"
+                :responsive="{
+                  0: { items: 1, margin: 10, autoplay: true },
+                  350: { items: 2, margin: 15, autoplay: true },
+                  600: { items: 3, margin: 30 },
+                  900: { items: 4, margin: 30 },
+                }"
+              >
                 <div
                   class="hover14"
                   v-for="(img_banner, index) in imgs_banner"
@@ -32,7 +38,7 @@
                 </div>
               </carousel>
             </div>
-            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -160,7 +166,6 @@ figure img {
 }
 
 @media only screen and (max-width: 768px) {
-  
   .title h3 {
     font-weight: 600;
     font-size: 0.8rem;
@@ -175,7 +180,6 @@ figure img {
   }
 }
 @media only screen and (max-width: 425px) {
-  
   figure img {
     max-width: 100%;
   }

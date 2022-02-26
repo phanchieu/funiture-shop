@@ -1,32 +1,30 @@
 <template>
   <div id="app">
-    {{check_login()}}
-    <Header/>
+    {{ check_login() }}
+    <Header />
   </div>
 </template>
 <script>
-import {mapMutations} from 'vuex'
-import Header from './components/header.vue'
+import { mapMutations } from "vuex";
+import Header from "./components/header.vue";
 export default {
-  name:'app',
+  name: "app",
   components: {
     Header,
-    },
-    methods:{
-      ...mapMutations([
-        'check_login'
-      ]),
-      checkLogin(){
-        if(localStorage.getItem('login') == null){
-          var user_login = false
-          localStorage.setItem('login', JSON.stringify(user_login));
-        }
+  },
+  methods: {
+    ...mapMutations(["check_login"]),
+    checkLogin() {
+      if (localStorage.getItem("login") == null) {
+        var user_login = false;
+        localStorage.setItem("login", JSON.stringify(user_login));
       }
     },
-    created(){
-      this.checkLogin()
-    }
-}
+  },
+  created() {
+    this.checkLogin();
+  },
+};
 </script>
 <style>
 #app {
@@ -34,5 +32,4 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 </style>

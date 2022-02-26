@@ -1,6 +1,7 @@
 export default {
   products: [
-    { id:14,
+    {
+      id: 14,
       img: "assets/images/room/work_room/1.jpg",
       view_img_product: [
         "assets/images/room/work_room/img_view_prd/1-1.jpg",
@@ -14,7 +15,8 @@ export default {
       category: "Phòng làm việc",
       materials: ["Gỗ - Bọc Vải"],
     },
-    { id:24,
+    {
+      id: 24,
       img: "assets/images/room/work_room/2.jpg",
       view_img_product: [
         "assets/images/room/work_room/img_view_prd/2-1.jpg",
@@ -28,7 +30,8 @@ export default {
       category: "Phòng làm việc",
       materials: ["Gỗ"],
     },
-    { id:34,
+    {
+      id: 34,
       img: "assets/images/room/work_room/3.jpg",
       view_img_product: [
         "assets/images/room/work_room/img_view_prd/3-1.jpg",
@@ -43,7 +46,8 @@ export default {
       category: "Phòng làm việc",
       materials: ["Gỗ"],
     },
-    { id:44,
+    {
+      id: 44,
       img: "assets/images/room/work_room/4.jpg",
       view_img_product: [
         "assets/images/room/work_room/img_view_prd/4-1.jpg",
@@ -58,7 +62,8 @@ export default {
       category: "Phòng làm việc",
       materials: ["Gỗ"],
     },
-    { id:54,
+    {
+      id: 54,
       img: "assets/images/room/work_room/5.jpg",
       view_img_product: [
         "assets/images/room/work_room/img_view_prd/5-1.jpg",
@@ -73,7 +78,8 @@ export default {
       category: "Phòng làm việc",
       materials: ["Gỗ"],
     },
-    { id:64,
+    {
+      id: 64,
       img: "assets/images/room/living_room/6.jpg",
       view_img_product: [
         "assets/images/room/living_room/img_view_prd/6-1.jpg",
@@ -87,7 +93,8 @@ export default {
       category: "Phòng làm việc",
       materials: ["Gỗ"],
     },
-    { id:74,
+    {
+      id: 74,
       img: "assets/images/room/work_room/7.jpg",
       view_img_product: [
         "assets/images/room/work_room/img_view_prd/7-1.jpg",
@@ -101,7 +108,8 @@ export default {
       category: "Phòng làm việc",
       materials: ["Gỗ"],
     },
-    { id:84,
+    {
+      id: 84,
       img: "assets/images/room/work_room/8.jpg",
       view_img_product: [
         "assets/images/room/work_room/img_view_prd/8-1.jpg",
@@ -115,7 +123,8 @@ export default {
       category: "Phòng làm việc",
       materials: ["Gỗ"],
     },
-    { id:94,
+    {
+      id: 94,
       img: "assets/images/room/work_room/9.jpg",
       view_img_product: [
         "assets/images/room/work_room/img_view_prd/9-1.jpg",
@@ -130,7 +139,8 @@ export default {
       category: "Phòng làm việc",
       materials: ["Gỗ"],
     },
-    { id:104,
+    {
+      id: 104,
       img: "assets/images/room/work_room/10.jpg",
       view_img_product: [
         "assets/images/room/work_room/img_view_prd/10-1.jpg",
@@ -145,7 +155,8 @@ export default {
       category: "Phòng làm việc",
       materials: ["Gỗ"],
     },
-    { id:114,
+    {
+      id: 114,
       img: "assets/images/room/work_room/11.jpg",
       view_img_product: [
         "assets/images/room/work_room/img_view_prd/11-1.jpg",
@@ -160,7 +171,8 @@ export default {
       category: "Phòng làm việc",
       materials: ["Gỗ"],
     },
-    { id:124,
+    {
+      id: 124,
       img: "assets/images/room/work_room/12.jpg",
       view_img_product: [
         "assets/images/room/work_room/img_view_prd/12-1.jpg",

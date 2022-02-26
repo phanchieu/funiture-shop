@@ -57,19 +57,20 @@
                     class="input-search"
                     placeholder="Nhập từ khóa cần tìm..."
                     v-model="keyword"
-                     @keydown="search()"
+                    @keydown="search()"
                   />
-                    <button class="search-button">
-                 <router-link to="/Search">
-                    <b-icon class="icon-search" icon="search"> </b-icon>
-                 </router-link>
+                  <button class="search-button">
+                    <router-link to="/Search">
+                      <b-icon class="icon-search" icon="search"> </b-icon>
+                    </router-link>
                   </button>
                 </div>
                 <div class="cart-mobile">
-                  <router-link to="/Cart"
-                   style="background:transparent;"
+                  <router-link to="/Cart" style="background:transparent;"
                     ><b-icon class="icon-cart" icon="cart-check-fill"> </b-icon
-                    ><strong class="cart_product_number"> {{qtt_product}} </strong></router-link
+                    ><strong class="cart_product_number">
+                      {{ qtt_product }}
+                    </strong></router-link
                   >
                 </div>
               </div>
@@ -84,11 +85,23 @@
                   <div class="signUp_signIn">
                     <strong>Tài khoản</strong>
                     <div class="log_or_reg">
-                      <router-link v-if="login == false" to="/Login">Đăng nhập</router-link>
-                      <div><router-link v-if="login == true" to="/Info-product-order">Thông tin</router-link></div>
+                      <router-link v-if="login == false" to="/Login"
+                        >Đăng nhập</router-link
+                      >
+                      <div>
+                        <router-link
+                          v-if="login == true"
+                          to="/Info-product-order"
+                          >Thông tin</router-link
+                        >
+                      </div>
                       <span>*</span>
-                      <router-link v-if="login == false" to="/Register">Đăng ký</router-link>
-                      <div @click="logOut()"><a v-if="login == true" href="/">Đăng xuất</a></div>
+                      <router-link v-if="login == false" to="/Register"
+                        >Đăng ký</router-link
+                      >
+                      <div @click="logOut()">
+                        <a v-if="login == true" href="/">Đăng xuất</a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -97,10 +110,16 @@
                   <div class="icon_cart">
                     <b-icon class="icon-cart" icon="cart-check-fill"> </b-icon>
                   </div>
-                  <router-link to="/Cart" class="show_cart" style="background-color:transparent;">
+                  <router-link
+                    to="/Cart"
+                    class="show_cart"
+                    style="background-color:transparent;"
+                  >
                     <span class="in_cart">
                       <strong>Giỏ hàng</strong>
-                      <span><b>{{ qtt_product }}</b> <span>Sản phẩm</span></span>
+                      <span
+                        ><b>{{ qtt_product }}</b> <span>Sản phẩm</span></span
+                      >
                     </span>
                   </router-link>
                 </div>
@@ -218,12 +237,20 @@
                 v-if="show_login"
               >
                 <li class="list-mobile" @click="show = !show">
-                  <router-link v-if="login == false" to="/Login">Đăng nhập</router-link>
-                  <router-link v-if="login == true" to="/Info-product-order">Thông tin</router-link>
+                  <router-link v-if="login == false" to="/Login"
+                    >Đăng nhập</router-link
+                  >
+                  <router-link v-if="login == true" to="/Info-product-order"
+                    >Thông tin</router-link
+                  >
                 </li>
                 <li class="list-mobile" @click="show = !show">
-                  <router-link v-if="login == false" to="/Register">Đăng ký</router-link>
-                  <div @click="logOut()"><a v-if="login == true" href="/">Đăng xuất</a></div>
+                  <router-link v-if="login == false" to="/Register"
+                    >Đăng ký</router-link
+                  >
+                  <div @click="logOut()">
+                    <a v-if="login == true" href="/">Đăng xuất</a>
+                  </div>
                 </li>
               </ul>
             </transition>
@@ -231,85 +258,77 @@
         </div>
       </div>
       <div class="list-menu-mobile" v-else style="left:-1000px;"></div>
-      <Breadcrumbs :items="items">{{getRouter()}}</Breadcrumbs>
+      <Breadcrumbs :items="items">{{ getRouter() }}</Breadcrumbs>
     </div>
-    {{quantity_in_cart()}}
-    {{check()}}
-      <transition name="fade">
+    {{ quantity_in_cart() }}
+    {{ check() }}
+    <transition name="fade">
       <router-view></router-view>
-  </transition>
-  <div class="scroll" @click="scroll_up()">
-    <i class="fas fa-chevron-up"></i>
-  </div>
+    </transition>
+    <div class="scroll" @click="scroll_up()">
+      <i class="fas fa-chevron-up"></i>
+    </div>
   </div>
 </template>
 
 <script>
-import {mapGetters, mapMutations} from 'vuex'
-import Breadcrumbs from './breadcrumbs.vue';
+import { mapGetters, mapMutations } from "vuex";
+import Breadcrumbs from "./breadcrumbs.vue";
 export default {
   components: {
     Breadcrumbs,
-    },
+  },
   data() {
     return {
       show: false,
       show_menu: true,
       show_login: false,
-      items:[],
-      qtt_product:0,
-      login:false,
-      keyword:'',
+      items: [],
+      qtt_product: 0,
+      login: false,
+      keyword: "",
     };
   },
   methods: {
-    ...mapGetters([
-      'cart',
-      'getter_check_login'
-    ]),
-    ...mapMutations([
-      'check_login',
-      'search_prd'
-    ]),
-    getRouter(){
-      this.items = this.$route.matched
+    ...mapGetters(["cart", "getter_check_login"]),
+    ...mapMutations(["check_login", "search_prd"]),
+    getRouter() {
+      this.items = this.$route.matched;
       // console.log(this.$route);
     },
-    quantity_in_cart(){
-      var products = this.cart()
-      var qtt = products.length
-      this.qtt_product = qtt
+    quantity_in_cart() {
+      var products = this.cart();
+      var qtt = products.length;
+      this.qtt_product = qtt;
     },
-    logOut(){
-      var login = false
-      localStorage.setItem('login', JSON.stringify(login));
+    logOut() {
+      var login = false;
+      localStorage.setItem("login", JSON.stringify(login));
     },
-    check(){
-    this.login = this.getter_check_login()
+    check() {
+      this.login = this.getter_check_login();
     },
-    search(){
-      var keyword = this.keyword
-      this.search_prd(keyword)
+    search() {
+      var keyword = this.keyword;
+      this.search_prd(keyword);
       // console.log(this.keyword)
     },
-    scroll_up(){
-      window.scrollTo(0,0);
-    }
+    scroll_up() {
+      window.scrollTo(0, 0);
+    },
   },
-  created() {
-    
-  },
+  created() {},
 };
 </script>
 
 <style scoped>
 * {
   padding: 0;
-  margin:0;
+  margin: 0;
   box-sizing: border-box;
 }
 
-.scroll{
+.scroll {
   position: fixed;
   top: 90%;
   left: 90%;
@@ -327,11 +346,13 @@ export default {
 .scroll:hover i {
   margin-top: -4px;
 }
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .2s;
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s;
 }
-.fade-enter, .fade-leave-to {
-  opacity: .3;
+.fade-enter,
+.fade-leave-to {
+  opacity: 0.3;
 }
 .container {
   max-width: 1140px !important;
@@ -428,7 +449,7 @@ li {
   color: #acacac;
   padding: 5px 10px;
 }
-.search-button .router-link-exact-active:hover{
+.search-button .router-link-exact-active:hover {
   color: #acacac !important;
 }
 .login_cart {

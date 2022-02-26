@@ -40,7 +40,9 @@
                   <a href="mailto:phanchieudev@gmail.com" class="icon-address">
                     <b-icon icon="envelope-fill" class="ic_address"></b-icon>
                   </a>
-                  <a href="mailto:phanchieudev@gmail.com">phanchieudev@gmail.com</a>
+                  <a href="mailto:phanchieudev@gmail.com"
+                    >phanchieudev@gmail.com</a
+                  >
                 </div>
               </div>
             </div>
@@ -52,10 +54,18 @@
                     <li class="list">
                       <router-link to="/">Trang chủ</router-link>
                     </li>
-                    <li class="list"><router-link to="#">Giới thiệu</router-link></li>
-                    <li class="list"><router-link to="">Sản phẩm</router-link></li>
-                    <li class="list"><router-link to="/News">Tin tức</router-link></li>
-                    <li class="list"><router-link to="/Contact">Liên hệ</router-link></li>
+                    <li class="list">
+                      <router-link to="#">Giới thiệu</router-link>
+                    </li>
+                    <li class="list">
+                      <router-link to="">Sản phẩm</router-link>
+                    </li>
+                    <li class="list">
+                      <router-link to="/News">Tin tức</router-link>
+                    </li>
+                    <li class="list">
+                      <router-link to="/Contact">Liên hệ</router-link>
+                    </li>
                   </ul>
                 </div>
                 <div class="social-network col-7 col-md-7 col-lg-6">
@@ -118,7 +128,7 @@ export default {};
 a {
   text-decoration: none !important;
 }
-ul{
+ul {
   padding: 0;
   margin: 0;
 }

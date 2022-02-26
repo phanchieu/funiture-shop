@@ -1,6 +1,7 @@
 export default {
   products: [
-    { id:16,
+    {
+      id: 16,
       img: "assets/images/room/room_decorations/1.jpg",
       view_img_product: [
         "assets/images/room/room_decorations/img_view_prd/1-1.jpg",
@@ -15,7 +16,8 @@ export default {
       category: "Đồ trang trí",
       materials: ["Gỗ - Bọc Vải"],
     },
-    { id:26,
+    {
+      id: 26,
       img: "assets/images/room/room_decorations/2.jpg",
       view_img_product: [
         "assets/images/room/room_decorations/img_view_prd/2-1.jpg",
@@ -29,7 +31,8 @@ export default {
       materials: ["Khác"],
     },
 
-    { id:36,
+    {
+      id: 36,
       img: "assets/images/room/room_decorations/3.jpg",
       view_img_product: [
         "assets/images/room/room_decorations/img_view_prd/3-1.jpg",
@@ -43,7 +46,8 @@ export default {
       category: "Đồ trang trí",
       materials: ["Khác"],
     },
-    { id:46,
+    {
+      id: 46,
       img: "assets/images/room/room_decorations/4.jpg",
       view_img_product: [
         "assets/images/room/room_decorations/img_view_prd/4-1.jpg",
@@ -57,7 +61,8 @@ export default {
       category: "Đồ trang trí",
       materials: ["Khác"],
     },
-    { id:56,
+    {
+      id: 56,
       img: "assets/images/room/room_decorations/5.jpg",
       view_img_product: [
         "assets/images/room/room_decorations/img_view_prd/5-1.jpg",
@@ -71,7 +76,8 @@ export default {
       category: "Đồ trang trí",
       materials: ["Khác"],
     },
-    { id:66,
+    {
+      id: 66,
       img: "assets/images/room/room_decorations/6.jpg",
       view_img_product: [
         "assets/images/room/room_decorations/img_view_prd/6-1.jpg",
@@ -84,7 +90,8 @@ export default {
       category: "Đồ trang trí",
       materials: ["Khác"],
     },
-    { id:76,
+    {
+      id: 76,
       img: "assets/images/room/room_decorations/7.jpg",
       view_img_product: [
         "assets/images/room/room_decorations/img_view_prd/7-1.jpg",
@@ -97,7 +104,8 @@ export default {
       category: "Đồ trang trí",
       materials: ["Khác"],
     },
-    { id:86,
+    {
+      id: 86,
       img: "assets/images/room/room_decorations/8.jpg",
       view_img_product: [
         "assets/images/room/room_decorations/img_view_prd/8-1.jpg",
@@ -112,7 +120,8 @@ export default {
       category: "Đồ trang trí",
       materials: ["Khác"],
     },
-    { id:96,
+    {
+      id: 96,
       img: "assets/images/room/room_decorations/9.jpg",
       view_img_product: [
         "assets/images/room/room_decorations/img_view_prd/9-1.jpg",
@@ -127,7 +136,8 @@ export default {
       category: "Đồ trang trí",
       materials: ["Khác"],
     },
-    { id:106,
+    {
+      id: 106,
       img: "assets/images/room/room_decorations/10.jpg",
       view_img_product: [
         "assets/images/room/room_decorations/img_view_prd/10-1.jpg",
@@ -141,7 +151,8 @@ export default {
       category: "Đồ trang trí",
       materials: ["Khác"],
     },
-    { id:116,
+    {
+      id: 116,
       img: "assets/images/room/room_decorations/11.jpg",
       view_img_product: [
         "assets/images/room/room_decorations/img_view_prd/11-1.jpg",
@@ -156,7 +167,8 @@ export default {
       category: "Đồ trang trí",
       materials: ["Khác"],
     },
-    { id:126,
+    {
+      id: 126,
       img: "assets/images/room/room_decorations/12.jpg",
       view_img_product: [
         "assets/images/room/room_decorations/img_view_prd/12-1.jpg",

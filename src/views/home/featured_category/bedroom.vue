@@ -1,7 +1,12 @@
 <template>
   <div class="container" v-if="active == 3">
     <div class="bedroom">
-      <carousel :autoplay="true" :nav="false" :dots="false" :responsive="{0:{items:2},600:{items:4},1000:{items:6}}">
+      <carousel
+        :autoplay="true"
+        :nav="false"
+        :dots="false"
+        :responsive="{ 0: { items: 2 }, 600: { items: 4 }, 1000: { items: 6 } }"
+      >
         <div
           class="product"
           v-for="(product, index) in products"
@@ -10,9 +15,7 @@
         >
           <router-link :to="link_view_product" class="img">
             <img
-              :src="
-                require(`@/${product.img}`)
-              "
+              :src="require(`@/${product.img}`)"
               alt=""
               class="img_product"
             />
@@ -26,13 +29,17 @@
               <i class="fas fa-star"></i>
             </div>
             <h6 class="product_name">
-              <router-link :to="link_view_product">{{ product.name }}</router-link>
+              <router-link :to="link_view_product">{{
+                product.name
+              }}</router-link>
             </h6>
             <div class="price">
               {{ formatPrice(product.price) }}<span>đ</span>
             </div>
             <div class="buttons-coll">
-              <router-link :to="link_view_product" class="custom-btn view_now"><span>Xem ngay</span></router-link>
+              <router-link :to="link_view_product" class="custom-btn view_now"
+                ><span>Xem ngay</span></router-link
+              >
             </div>
           </div>
         </div>
@@ -43,7 +50,7 @@
 
 <script>
 import carousel from "vue-owl-carousel";
-import { mapMutations,mapGetters } from "vuex";
+import { mapMutations, mapGetters } from "vuex";
 export default {
   components: { carousel },
   props: ["active"],
@@ -55,7 +62,7 @@ export default {
   },
   methods: {
     ...mapMutations(["viewProduct"]),
-    ...mapGetters(['ProductsBedRoom']),
+    ...mapGetters(["ProductsBedRoom"]),
     formatPrice(value) {
       let val = (value / 1).toFixed().replace(".");
       return val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
@@ -64,14 +71,14 @@ export default {
       let Data = [product];
       this.viewProduct(Data);
     },
-    getProducts(){
-      var getPrd = this.ProductsBedRoom()
-      this.products = getPrd.products
-    }
+    getProducts() {
+      var getPrd = this.ProductsBedRoom();
+      this.products = getPrd.products;
+    },
   },
-  created(){
-    this.getProducts()
-  }
+  created() {
+    this.getProducts();
+  },
 };
 </script>
 
@@ -256,5 +263,4 @@ h5::before {
 .view_now span:hover:after {
   width: 100%;
 }
-
 </style>

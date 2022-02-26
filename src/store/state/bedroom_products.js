@@ -1,6 +1,7 @@
 export default {
   products: [
-    { id:13,
+    {
+      id: 13,
       img: "assets/images/room/bedroom/1.jpg",
       view_img_product: [
         "assets/images/room/bedroom/img_view_prd/1-1.jpg",
@@ -15,7 +16,8 @@ export default {
       category: "Phòng ngủ",
       materials: ["Gỗ - Bọc Vải"],
     },
-    { id:23,
+    {
+      id: 23,
       img: "assets/images/room/bedroom/2.jpg",
       view_img_product: [
         "assets/images/room/bedroom/img_view_prd/2-1.jpg",
@@ -29,7 +31,8 @@ export default {
       category: "Phòng ngủ",
       materials: ["Gỗ - Bọc Da"],
     },
-    { id:33,
+    {
+      id: 33,
       img: "assets/images/room/bedroom/3.jpg",
       view_img_product: [
         "assets/images/room/bedroom/img_view_prd/3-1.jpg",
@@ -44,7 +47,8 @@ export default {
       category: "Phòng ngủ",
       materials: ["Gỗ - Bọc Vải"],
     },
-    { id:43,
+    {
+      id: 43,
       img: "assets/images/room/bedroom/4.jpg",
       view_img_product: [
         "assets/images/room/bedroom/img_view_prd/4-1.jpg",
@@ -58,7 +62,8 @@ export default {
       category: "Phòng ngủ",
       materials: ["Gỗ"],
     },
-    { id:53,
+    {
+      id: 53,
       img: "assets/images/room/bedroom/5.jpg",
       view_img_product: [
         "assets/images/room/bedroom/img_view_prd/5-1.jpg",
@@ -73,7 +78,8 @@ export default {
       category: "Phòng ngủ",
       materials: ["Gỗ - Bọc Vải"],
     },
-    { id:63,
+    {
+      id: 63,
       img: "assets/images/room/bedroom/6.jpg",
       view_img_product: [
         "assets/images/room/bedroom/img_view_prd/6-1.jpg",
@@ -88,7 +94,8 @@ export default {
       category: "Phòng ngủ",
       materials: ["Gỗ"],
     },
-    { id:73,
+    {
+      id: 73,
       img: "assets/images/room/bedroom/7.jpg",
       view_img_product: [
         "assets/images/room/bedroom/img_view_prd/7-1.jpg",
@@ -103,7 +110,8 @@ export default {
       category: "Phòng ngủ",
       materials: ["Gỗ - Bọc Vải"],
     },
-    { id:83,
+    {
+      id: 83,
       img: "assets/images/room/bedroom/8.jpg",
       view_img_product: [
         "assets/images/room/bedroom/img_view_prd/8-1.jpg",
@@ -118,7 +126,8 @@ export default {
       category: "Phòng ngủ",
       materials: ["Gỗ"],
     },
-    { id:93,
+    {
+      id: 93,
       img: "assets/images/room/bedroom/9.jpg",
       view_img_product: [
         "assets/images/room/bedroom/img_view_prd/9-1.jpg",
@@ -132,7 +141,8 @@ export default {
       category: "Phòng ngủ",
       materials: ["Gỗ - Bọc Vải"],
     },
-    { id:103,
+    {
+      id: 103,
       img: "assets/images/room/bedroom/10.jpg",
       view_img_product: [
         "assets/images/room/bedroom/img_view_prd/10-1.jpg",
@@ -147,7 +157,8 @@ export default {
       category: "Phòng ngủ",
       materials: ["Gỗ - Bọc Da"],
     },
-    { id:113,
+    {
+      id: 113,
       img: "assets/images/room/bedroom/11.jpg",
       view_img_product: [
         "assets/images/room/bedroom/img_view_prd/11-1.jpg",
@@ -161,7 +172,8 @@ export default {
       category: "Phòng ngủ",
       materials: ["Gỗ - Bọc Da"],
     },
-    { id:123,
+    {
+      id: 123,
       img: "assets/images/room/bedroom/12.jpg",
       view_img_product: [
         "assets/images/room/bedroom/img_view_prd/12-1.jpg",

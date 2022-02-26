@@ -50,7 +50,7 @@
 
 <script>
 import carousel from "vue-owl-carousel";
-import { mapMutations,mapGetters } from "vuex";
+import { mapMutations, mapGetters } from "vuex";
 export default {
   components: { carousel },
   props: ["active"],
@@ -62,7 +62,7 @@ export default {
   },
   methods: {
     ...mapMutations(["viewProduct"]),
-    ...mapGetters(['ProductsLivingRoom']),
+    ...mapGetters(["ProductsLivingRoom"]),
     formatPrice(value) {
       let val = (value / 1).toFixed().replace(".");
       return val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
@@ -71,14 +71,14 @@ export default {
       let Data = [product];
       this.viewProduct(Data);
     },
-    getProducts(){
-      var getPrd = this.ProductsLivingRoom()
-      this.products = getPrd.products
-    }
+    getProducts() {
+      var getPrd = this.ProductsLivingRoom();
+      this.products = getPrd.products;
+    },
   },
-  created(){
-    this.getProducts()
-  }
+  created() {
+    this.getProducts();
+  },
 };
 </script>
 

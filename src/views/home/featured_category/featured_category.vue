@@ -47,37 +47,34 @@
       </div>
     </div>
     <!-- <router-view></router-view> -->
-   <LivingRoom :active="active"></LivingRoom>
-   <DiningRoom :active="active"></DiningRoom>
-   <BebRoom :active="active"></BebRoom>
-   <WorkRoom :active="active"></WorkRoom>
+    <LivingRoom :active="active"></LivingRoom>
+    <DiningRoom :active="active"></DiningRoom>
+    <BebRoom :active="active"></BebRoom>
+    <WorkRoom :active="active"></WorkRoom>
   </div>
 </template>
 
 <script>
-
 // import carousel from 'vue-owl-carousel';
-import LivingRoom from './living_room.vue';
-import DiningRoom from './dining_room.vue';
-import BebRoom from './bedroom.vue';
-import WorkRoom from './work_room.vue';
+import LivingRoom from "./living_room.vue";
+import DiningRoom from "./dining_room.vue";
+import BebRoom from "./bedroom.vue";
+import WorkRoom from "./work_room.vue";
 
 export default {
-    components: { 
-      // carousel , 
-      LivingRoom,
-      DiningRoom,
-      BebRoom,
-      WorkRoom,
-     },
+  components: {
+    // carousel ,
+    LivingRoom,
+    DiningRoom,
+    BebRoom,
+    WorkRoom,
+  },
   data() {
     return {
       active: 1,
     };
   },
-  methods: {
-   
-  },
+  methods: {},
 };
 </script>
 
@@ -89,11 +86,11 @@ export default {
 a {
   text-decoration: none !important;
 }
-ul{
+ul {
   padding: 0;
   margin: 0;
 }
-h5{
+h5 {
   margin: 0;
 }
 li {
@@ -181,14 +178,13 @@ h5::before {
   transition: all 0.2s ease-in-out;
 }
 
-
 @media only screen and (max-width: 425px) {
   .title {
     display: inline-block;
   }
   .group_tab {
-  display: flex;
-  margin-top: 10px;
-}
+    display: flex;
+    margin-top: 10px;
+  }
 }
 </style>

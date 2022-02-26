@@ -1,6 +1,7 @@
 export default {
   products: [
-    { id:12,
+    {
+      id: 12,
       img: "assets/images/room/dining_room/1.jpg",
       view_img_product: [
         "assets/images/room/dining_room/img_view_prd/1-1.jpg",
@@ -15,7 +16,8 @@ export default {
       category: "Phòng ăn",
       materials: ["Gỗ - Bọc Vải"],
     },
-    { id:22,
+    {
+      id: 22,
       img: "assets/images/room/dining_room/2.jpg",
       view_img_product: [
         "assets/images/room/dining_room/img_view_prd/2-1.jpg",
@@ -29,7 +31,8 @@ export default {
       category: "Phòng ăn",
       materials: ["Gỗ"],
     },
-    { id:32,
+    {
+      id: 32,
       img: "assets/images/room/dining_room/3.jpg",
       view_img_product: [
         "assets/images/room/dining_room/img_view_prd/3-1.jpg",
@@ -43,7 +46,8 @@ export default {
       category: "Phòng ăn",
       materials: ["Gỗ"],
     },
-    { id:42,
+    {
+      id: 42,
       img: "assets/images/room/dining_room/4.jpg",
       view_img_product: [
         "assets/images/room/dining_room/img_view_prd/4-1.jpg",
@@ -57,7 +61,8 @@ export default {
       category: "Phòng ăn",
       materials: ["Gỗ"],
     },
-    { id:52,
+    {
+      id: 52,
       img: "assets/images/room/dining_room/5.jpg",
       view_img_product: [
         "assets/images/room/dining_room/img_view_prd/5-1.jpg",
@@ -72,7 +77,8 @@ export default {
       category: "Phòng ăn",
       materials: ["Gỗ"],
     },
-    { id:62,
+    {
+      id: 62,
       img: "assets/images/room/dining_room/6.jpg",
       view_img_product: [
         "assets/images/room/dining_room/img_view_prd/6-1.jpg",
@@ -87,7 +93,8 @@ export default {
       category: "Phòng ăn",
       materials: ["Gỗ"],
     },
-    { id:72,
+    {
+      id: 72,
       img: "assets/images/room/dining_room/7.jpg",
       view_img_product: [
         "assets/images/room/dining_room/img_view_prd/7-1.jpg",
@@ -101,7 +108,8 @@ export default {
       category: "Phòng ăn",
       materials: ["Gỗ - Bọc Da"],
     },
-    { id:82,
+    {
+      id: 82,
       img: "assets/images/room/dining_room/8.jpg",
       view_img_product: [
         "assets/images/room/dining_room/img_view_prd/8-1.jpg",
@@ -115,7 +123,8 @@ export default {
       category: "Phòng ăn",
       materials: ["Gỗ - Bọc Vải"],
     },
-    { id:92,
+    {
+      id: 92,
       img: "assets/images/room/dining_room/9.jpg",
       view_img_product: [
         "assets/images/room/dining_room/img_view_prd/9-1.jpg",
@@ -129,7 +138,8 @@ export default {
       category: "Phòng ăn",
       materials: ["Gỗ - Bọc Vải"],
     },
-    { id:102,
+    {
+      id: 102,
       img: "assets/images/room/dining_room/10.jpg",
       view_img_product: [
         "assets/images/room/dining_room/img_view_prd/10-1.jpg",
@@ -144,7 +154,8 @@ export default {
       category: "Phòng ăn",
       materials: ["Gỗ"],
     },
-    { id:112,
+    {
+      id: 112,
       img: "assets/images/room/dining_room/11.jpg",
       view_img_product: [
         "assets/images/room/dining_room/img_view_prd/11-1.jpg",
@@ -159,7 +170,8 @@ export default {
       category: "Phòng ăn",
       materials: ["Gỗ - Bọc Vải"],
     },
-    { id:122,
+    {
+      id: 122,
       img: "assets/images/room/dining_room/12.jpg",
       view_img_product: [
         "assets/images/room/dining_room/img_view_prd/12-1.jpg",
