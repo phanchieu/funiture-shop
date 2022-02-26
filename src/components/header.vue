@@ -308,6 +308,7 @@ export default {
   margin:0;
   box-sizing: border-box;
 }
+
 .scroll{
   position: fixed;
   top: 90%;
@@ -333,7 +334,8 @@ export default {
   opacity: .3;
 }
 .container {
-  max-width: 1140px;
+  max-width: 1140px !important;
+  margin: 0px auto !important;
 }
 a {
   text-decoration: none !important;
