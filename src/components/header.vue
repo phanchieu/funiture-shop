@@ -18,10 +18,10 @@
               </div>
             </div>
             <div class="freeship col-5">
-              <p>
+              <span>
                 Miễn phí vận chuyển với đơn hàng trên 500.000đ
                 <b-icon class="icon-truck" icon="truck"></b-icon>
-              </p>
+              </span>
             </div>
           </div>
         </div>
@@ -355,9 +355,14 @@ export default {
 a {
   text-decoration: none !important;
 }
+ul {
+  padding: 0;
+  margin: 0;
+}
 li {
   list-style: none !important;
 }
+
 .router-link-exact-active,
 .active {
   background: #ff9f00;
@@ -518,10 +523,12 @@ li {
   align-items: center;
   justify-content: center;
 }
+.list_menu {
+  padding: 0;
+  margin: 0;
+}
 .list {
-  display: flex;
-  float: left;
-
+  display: inline-flex;
   transition: all 0.15s ease-in-out;
 }
 .list:hover {
