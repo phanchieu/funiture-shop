@@ -322,7 +322,6 @@ export default {
 </script>
 
 <style scoped>
-
 .scroll {
   position: fixed;
   top: 90%;
